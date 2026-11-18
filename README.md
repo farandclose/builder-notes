@@ -1,27 +1,21 @@
 # builder-notes
 
-Practices and lessons from building products in the agentic coding era, written down so I don't lose them and so you can borrow what works.
+Most of us now build through agents. We describe the problem, they write the code, and the real job is deciding what's worth building and why.
 
-I'm Saurabh, a product builder in Bengaluru. I lead product teams by day, and on the side I build tools for working alongside AI agents, like [Bot Portal](https://www.botportal.app) and [Markwise](https://markwise.dev). Every one of these builds teaches me something I'd otherwise forget by the next project. This repo is where those things land.
-
-There are two kinds of notes here.
-
-**Practices** are habits you can copy into your own work. Each one has its own folder with why it exists, the files you need and a prompt you can paste into your coding agent to set it up.
-
-**Lessons** are short notes on one thing I learned while building. Each says what I believed, what actually happened and what I'd do now.
+As I've used these agents to build my own products, I've picked up habits that made a real difference. This repo is where I share them, especially for product thinkers who don't come from an engineering background. You don't need to learn software best practices first. Apply a practice here while you build, and you'll find yourself following those best practices along the way. I'm a product manager with a technical background, and it has given me a head start with coding agents. I'd like to pass some of that on.
 
 ## Practices
 
-Newest first.
+### Product context in every PR
 
-- [Product context in every PR](practices/product-context-in-prs/): every pull request says why the product changed, and that reason lives in git history right next to the code. Added November 2026.
+I've worked on mature products where nobody could tell me why a feature worked the way it did. The PRD said one thing, years of bug fixes said another, and the people who made the calls had moved on. With agents it gets worse. An agent reads the code, not the history, and will happily "fix" something that was deliberate.
 
-## Lessons
+So every pull request I merge now carries a short product note: the user problem, what I considered, what I picked and why. It goes into the commit itself, so the reason sits next to the code forever. Close to a hundred of these notes later, they read like a diary of every product call I've made, and a few have already turned into articles.
 
-Newest first. None published yet; the format is in [lessons/README.md](lessons/README.md).
+[Set it up for yourself](practices/product-context-in-prs/)
 
-## Using this
+## If you try one
 
-Take anything here and make it your own. If you try a practice and it breaks, or you've found a better way, open an issue. I'd love to hear about it.
+Make it yours. If it breaks or you find a better way, open an issue. I'd genuinely like to know.
 
-You can also find me on [X](https://x.com/far_and_close) and [LinkedIn](https://www.linkedin.com/in/saurabhmehta2/).
+Find me on [X](https://x.com/far_and_close) and [LinkedIn](https://www.linkedin.com/in/saurabhmehta2/).
